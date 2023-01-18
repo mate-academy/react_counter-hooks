@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import { useState, FC } from 'react';
 import './App.scss';
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   const [count, setCount] = useState(0);
 
   const addOne = () => {
-    setCount(count + 1);
+    setCount(previous => previous + 1);
   };
 
   const add100 = () => {
-    setCount(count + 100);
+    setCount(previous => previous + 100);
   };
 
-  // DON'T change the code below
   const increase = () => {
     addOne();
 
