@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.scss';
 
 export const App: React.FC = () => {
-  const [count, addition] = useState(1);
+  const [count, addition] = useState(0);
 
   const addOne = () => {
     addition(current => current + 1);
